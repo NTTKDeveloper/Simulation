@@ -55,8 +55,10 @@ public class Camera_System : MonoBehaviour
         CapsuleCollider capsuleCollider = nhanvat.GetComponent<CapsuleCollider>();
         // Tính toán vị trí trên đỉnh đầu
         float characterHeight = capsuleCollider.height;
-        Vector3 R_topPosition = new Vector3(0.03f, characterHeight - 1.2f, 0);
-        Vector3 L_topPosition = new Vector3(-0.03f, characterHeight - 1.2f, 0);
+        // Vector3 R_topPosition = new Vector3(0.03f, characterHeight - 1.2f, 0);
+        // Vector3 L_topPosition = new Vector3(-0.03f, characterHeight - 1.2f, 0);
+        Vector3 L_topPosition = new Vector3(-0.2f, characterHeight - 1.2f, 0);
+        Vector3 R_topPosition = new Vector3(0.2f, characterHeight - 1.2f, 0);
         // Đặt vị trí của camera (trong không gian local)
         left_Eye.transform.localPosition = L_topPosition;
         right_Eye.transform.localPosition = R_topPosition;
